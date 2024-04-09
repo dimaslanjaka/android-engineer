@@ -16,3 +16,5 @@ simg2img.exe chunk1.img chunk2.img chunk3.img output.img
 ```
 
 merge all chunks into output image
+
+[video tutorial](https://www.youtube.com/watch?v=i6rvuBauM4c)
