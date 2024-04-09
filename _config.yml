@@ -33,14 +33,14 @@ kramdown:
 permalink: /:title
 encoding: UTF-8
 
-theme: minima
+# theme: minima
 
-plugins:
-  - jekyll-readme-index
-  - jekyll-redirect-from
-  - github-pages
+# plugins:
+#   - jekyll-readme-index
+#   - jekyll-redirect-from
+#   - github-pages
 
-readme_index:
-  enabled:          true
-  remove_originals: true
-  with_frontmatter: false
+# readme_index:
+#   enabled:          true
+#   remove_originals: true
+#   with_frontmatter: false
