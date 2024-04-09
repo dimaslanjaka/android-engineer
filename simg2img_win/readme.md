@@ -57,6 +57,8 @@ to enable full download of `super.img` for **Realme**, you should edit `MTXXXXX_
 
 - replace `is_download: false` to `is_download: true`
 
-[video tutorial](https://www.youtube.com/watch?v=i6rvuBauM4c)
+<!-- [video tutorial](https://www.youtube.com/watch?v=i6rvuBauM4c) -->
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/i6rvuBauM4c' frameborder='0' allowfullscreen></iframe></div>
 
 **NOW YOU READY TO FLASH USING SP FLASH TOOL**
