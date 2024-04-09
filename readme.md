@@ -2,6 +2,10 @@
 
 flash tools, drivers, support tools, etc
 
+# Before ALL
+
+- enter windows mode `disable driver signature enforcement`
+
 # OFP flash file
 
 - extract `ofp` file using `MCT OFP Extractor`
