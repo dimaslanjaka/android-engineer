@@ -13,3 +13,4 @@ exclude:
   - "*.rar"
   - "*.apk"
   - "*.exe"
+timezone: Asia/Jakarta
