@@ -42,7 +42,7 @@
       </ul>
       {% endif %}
     </header>
-    <section>
+    <section id="content-wrapper">
 
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2188063137129806" data-ad-slot="6233018586"
         data-ad-format="auto" data-full-width-responsive="true"></ins>
@@ -76,8 +76,9 @@
       }
     }
     const isDev = location.port == '4000';
-    document.querySelectorAll('pre').forEach(appendAd);
-    document.querySelectorAll('h1,h2,h3,h4,h5').forEach(appendAd);
+    const wrapper = document.getElementById('content-wrapper');
+    wrapper.querySelectorAll('pre').forEach(appendAd);
+    wrapper.querySelectorAll('h1,h2,h3,h4,h5').forEach(appendAd);
     document.querySelectorAll('ins.adsbygoogle').forEach((el, i) => {
       if (el.children.length == 0) {
         const uid = `#${el.id}.${el.className}[${i}]`;
