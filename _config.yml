@@ -1,3 +1,8 @@
+title: "Android Engineer"
+baseurl: "/android-engineer" # the subpath of your site, e.g. /blog
+url: "https://www.webmanajemen.com" # the base hostname & protocol for your site
+github_username:  dimaslanjaka
+email: dimaslanjaka@gmail.com
 exclude:
   - .sass-cache/
   - .jekyll-cache/
