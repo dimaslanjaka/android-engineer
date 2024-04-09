@@ -24,11 +24,10 @@ show_downloads: false
 logo: https://rawcdn.githack.com/dimaslanjaka/public-source/1a5eb6ac9eec2bd440a694858cdd0f1728e115f1/images/cropped-PicsArt_09-09-12.12.25.jpg
 
 # Build settings
-markdown_ext: "markdown, mkdown, mkdn, mkd, md"
-markdown: kramdown
-  # input: GFM
-kramdown:
-  parse_block_html: true
+# markdown_ext: "markdown, mkdown, mkdn, mkd, md"
+# markdown: kramdown
+# kramdown:
+#   parse_block_html: true
 # Permalinks
 permalink: /:title
 encoding: UTF-8
