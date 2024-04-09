@@ -14,3 +14,4 @@ exclude:
   - "*.apk"
   - "*.exe"
 timezone: Asia/Jakarta
+google_analytics: UA-106238155-1
