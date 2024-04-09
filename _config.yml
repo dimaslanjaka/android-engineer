@@ -1,6 +1,6 @@
 title: "Android Engineer"
-baseurl: "/android-engineer" # the subpath of your site, e.g. /blog
-url: "https://www.webmanajemen.com" # the base hostname & protocol for your site
+# baseurl: "/android-engineer" # the subpath of your site, e.g. /blog
+# url: "https://www.webmanajemen.com" # the base hostname & protocol for your site
 github_username:  dimaslanjaka
 email: dimaslanjaka@gmail.com
 exclude:
@@ -21,3 +21,26 @@ exclude:
 timezone: Asia/Jakarta
 google_analytics: UA-106238155-1
 show_downloads: false
+logo: https://rawcdn.githack.com/dimaslanjaka/public-source/1a5eb6ac9eec2bd440a694858cdd0f1728e115f1/images/cropped-PicsArt_09-09-12.12.25.jpg
+
+# Build settings
+markdown_ext: "markdown, mkdown, mkdn, mkd, md"
+markdown: kramdown
+  # input: GFM
+kramdown:
+  parse_block_html: true
+# Permalinks
+permalink: /:title
+encoding: UTF-8
+
+theme: minima
+
+plugins:
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - github-pages
+
+readme_index:
+  enabled:          true
+  remove_originals: true
+  with_frontmatter: false
