@@ -20,6 +20,7 @@ fastboot flash recovery recovery.img
 > stock ROM for **Realme C25s RMX3195** by version
 
 - [A11 / 11 A.19 Android 11 RUI2](http://rms01.realme.net/SW/realme%20service/realme%20C25s/2167A/RMX3195export_11_A.19_2022030814430000.zip)
+  > this version firmware has ability to install **TWRP** permanently
 
 ## TWRP
 
