@@ -4,6 +4,8 @@ title: Realme C25s RMX3195
 
 # Realme C25s RMX3195
 
+[All **Realme C25s RMX3195** tools download from here](https://github.com/dimaslanjaka/android-engineer/tree/master/)
+
 ## Stock recovery
 
 [select your firmware version and download then extract](https://drive.google.com/drive/folders/190xREcWNzmEY1ZShuaaNRcWE1tpPPJ40)
@@ -43,9 +45,12 @@ fastboot flash recovery recovery.img
 - select scatter `.txt` file
 - check all partitions, uncheck **preloader**, **opporeserve2**
 
+> when above methods not work on your device, try flash your **previous RUI ROM**. ex: **C.xx** for RUI3 and **A.xx** for RUI2
+
 ## Official Forums
 
 > all about **Realme C25s RMX3195** from official realme forums
 
 - [RUI 3](https://c.realme.com/in/post-details/1525087214281764864)
   > including **upgrade**, **downgrade** OTA zip links
+- [RUI 2 Ota downgrade zip](https://download.c.realme.com/flash/Rollbackpack/realme_C25s/oplus_ota_downgrade.zip)
