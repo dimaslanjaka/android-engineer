@@ -3,3 +3,6 @@
 .sass-cache
 *.log
 .env
+*.img
+*.zip
+*.rar
