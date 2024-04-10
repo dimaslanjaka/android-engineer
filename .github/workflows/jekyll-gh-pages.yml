@@ -43,6 +43,7 @@ jobs:
         #   # triggered a workflow, this defaults to the reference or SHA for that event.
         #   # Otherwise, uses the default branch.
         #   ref: 'gh-pages'
+          ref: ${{ github.event.inputs.ref }}
       - run: git checkout gh-pages
       - run: git merge master
       - uses: ruby/setup-ruby@v1
