@@ -16,4 +16,6 @@ fastboot flash vbmeta_system vbmeta_system.img
 fastboot flash vbmeta_vendor vbmeta_vendor.img
 ```
 
+> to disable DM-verify `fastboot --disable-verity --disable-verification flash [partition] [image file]`
+
 [download files here](https://github.com/dimaslanjaka/android-engineer/tree/master/realme-c25s/twrp/C.14)
