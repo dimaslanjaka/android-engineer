@@ -43,7 +43,7 @@ jobs:
       - run: git fetch --all
       - run: git checkout -b gh-pages origin/gh-pages
       - run: git branch
-      - run: git merge master
+      - run: git merge master -X theirs
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
@@ -51,6 +51,7 @@ jobs:
         with:
           ruby-version: "3.2.3" # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: bundle lock --add-platform x86_64-linux
       - run: bundle install
       - run: bundle exec jekyll build
         env:
