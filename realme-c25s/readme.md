@@ -8,7 +8,7 @@ title: Realme C25s RMX3195
 
 ## Stock recovery
 
-[select your firmware version and download then extract](https://drive.google.com/drive/folders/190xREcWNzmEY1ZShuaaNRcWE1tpPPJ40)
+select your firmware version and download then extract [[download here]](https://drive.google.com/drive/folders/190xREcWNzmEY1ZShuaaNRcWE1tpPPJ40)
 
 ```bash
 fastboot devices
