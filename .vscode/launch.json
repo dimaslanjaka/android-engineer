@@ -14,7 +14,7 @@
       }
     },
     {
-      "command": "bundle install && bundle exec jekyll serve --trace --livereload",
+      "command": "bundle install && bundle exec jekyll serve --trace --livereload --host=adsense.webmanajemen.com",
       "name": "install & serve",
       "request": "launch",
       "type": "node-terminal",
