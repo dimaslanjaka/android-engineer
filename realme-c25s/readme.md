@@ -4,6 +4,8 @@ title: Realme C25s RMX3195
 
 # Realme C25s RMX3195
 
+[All **Realme C25s RMX3195** tools download from here](https://github.com/dimaslanjaka/android-engineer/tree/master/)
+
 ## Stock recovery
 
 [select your firmware version and download then extract](https://drive.google.com/drive/folders/190xREcWNzmEY1ZShuaaNRcWE1tpPPJ40)
