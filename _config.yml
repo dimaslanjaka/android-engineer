@@ -40,11 +40,9 @@ extlinks:
   rel_exclude: ["webmanajemen.com", "host2.net"]
 
 markdown: CommonMarkGhPages
-kramdown:
-  parse_block_html: true
 commonmark:
   options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "tables"]
+  extensions: ["strikethrough", "autolink", "table", "strikethrough"]
 
 # enable ES6
 jekyll-minifier:
