@@ -42,3 +42,10 @@ fastboot flash recovery recovery.img
 - open your **SP Flash Tool**
 - select scatter `.txt` file
 - check all partitions, uncheck **preloader**, **opporeserve2**
+
+## Official Forums
+
+> all about **Realme C25s RMX3195** from official realme forums
+
+- [RUI 3](https://c.realme.com/in/post-details/1525087214281764864)
+  > including **upgrade**, **downgrade** OTA zip links
