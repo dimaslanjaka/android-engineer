@@ -55,6 +55,19 @@
       <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
         data-ad-client="ca-pub-2188063137129806" data-ad-slot="8135259201"></ins>
 
+      <h2>You may also like</h2>
+
+      {% assign all_content = site.posts | concat: site.pages %}
+      {% assign sorted_content = all_content | sort: 'date' | reverse %}
+      {% assign shuffled_content = all_content | sample: all_content.size | where_exp: "item", "item.title" %}
+      <ul>
+        {% for item in shuffled_content limit:5 %}
+        {% if item.url %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+
       <div id="disqus_thread" style="margin-top: 2em;margin-bottom: 2em;"></div>
       <script>
         /**
