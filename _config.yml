@@ -48,3 +48,8 @@ commonmark:
 jekyll-minifier:
   uglifier_args:
     harmony: true
+
+readme_index:
+  enabled: true
+  remove_originals: true
+  with_frontmatter: true

@@ -38,22 +38,12 @@ end
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  # gem "jekyll-github-metadata", "~> 1.0"
-  # gem "jekyll-feed", "~> 0.6"
-  # gem "jekyll-paginate"
-  # gem "jekyll-seo-tag", "2.8.0"
-  # gem "jekyll-readme-index", "0.3.0"
   # gem "html-pipeline", "2.14.3"
-  # gem "jekyll-redirect-from", "0.16.0"
-  # gem "jekyll-sitemap", "1.4.0"
-  # gem "jekyll-gist", "1.5.0"
-  # gem "jekyll-paginate"
   gem "jekyll-minifier"
   gem "jekyll-coffeescript"
   gem "jekyll-commonmark-ghpages"
   gem "jekyll-feed"
   gem "jekyll-gist"
-  # gem "jekyll-github-metadata"
   gem "jekyll-paginate"
   gem "jekyll-redirect-from"
   gem "jekyll-seo-tag"
