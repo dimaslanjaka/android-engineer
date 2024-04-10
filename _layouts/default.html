@@ -62,10 +62,10 @@
       {% assign shuffled_content = all_content | sample: all_content.size | where_exp: "item", "item.title" %}
       <ul>
         {% for item in shuffled_content limit:5 %}
-          {% if item.url %}
-            {% assign url = item.url | prepend: site.baseurl %}
-            <li><a href="{{ url }}">{{ item.title }}</a></li>
-          {% endif %}
+        {% if item.url %}
+        {% assign url = item.url | prepend: site.baseurl %}
+        <li><a href="{{ url }}">{{ item.title }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
 
@@ -75,7 +75,10 @@
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
         var disqus_config = function () {
-          const PAGE_URL = window.location.origin + window.location.pathname.replace('/readme', '/')
+          const baseurl = new URL("{{ site.url }}")
+          baseurl.pathname = window.location.pathname.replace('/readme', '/');
+          let PAGE_URL = baseurl.toString();
+          if (!PAGE_URL.endsWith('/')) PAGE_URL += '/';
           this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
           this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
           console.log('disqus load for', PAGE_URL);
