@@ -45,7 +45,7 @@ jobs:
         #   ref: 'gh-pages'
           ref: ${{ github.event.inputs.ref }}
       - run: git fetch --all
-      - run: git checkout origin/gh-pages
+      - run: git branch -m gh-pages origin/gh-pages
       - run: git branch
       - run: git merge master
       - uses: actions/setup-node@v4
