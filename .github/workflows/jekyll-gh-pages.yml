@@ -45,9 +45,19 @@ jobs:
         with:
           token: ${{ env.ACCESS_TOKEN }}
           ref: 'gh-pages'
-          path: _site
+          path: .deploy_git
       - name: initialize site
-        working-directory: _site
+        run: |
+          git rm -rf .
+        working-directory: .deploy_git
+      - name: Set env
+        id: set-env
+        shell: bash
+        run: |
+          echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
+          echo "GITHUB_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          echo "GITHUB_COMMIT_URL=https://github.com/${{github.repository}}/commit/$(echo $GITHUB_SHA)" >> $GITHUB_ENV
+          echo "GITHUB_RUNNER_URL=https://github.com/${{github.repository}}/commit/${{github.sha}}/checks/${{github.run_id}}" >> $GITHUB_ENV
       - run: git fetch --all
       - run: git checkout -b compiler origin/compiler
       - run: git branch
@@ -77,10 +87,15 @@ jobs:
       #     # Upload folder
       #     path: "_site"
       #     name: "github-pages"
+      - name: copy generated site
+        run: cp -rf _site/. .deploy_git/
       - run: |
           git config --global user.name 'dimaslanjaka'
           git config --global user.email 'dimaslanjaka@gmail.com'
-        working-directory: _site
+          git add .
+          git commit -m "chore: released from ${{ env.GITHUB_COMMIT_URL }}" -m "commit hash: ${{ env.GITHUB_SHA_SHORT }}" -m "commit url: ${{ env.GITHUB_COMMIT_URL }}" -m "runner: ${{ env.GITHUB_RUNNER_URL }}"
+          git push
+        working-directory: .deploy_git
 
   # Deployment job
   # deploy:
