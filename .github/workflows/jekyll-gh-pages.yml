@@ -44,8 +44,9 @@ jobs:
         #   # Otherwise, uses the default branch.
         #   ref: 'gh-pages'
           ref: ${{ github.event.inputs.ref }}
-      - run: "git checkout gh-pages"
-      - run: "git merge master"
+      - run: git fetch --all
+      - run: git checkout origin/gh-pages
+      - run: git merge master
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
