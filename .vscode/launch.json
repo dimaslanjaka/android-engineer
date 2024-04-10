@@ -12,6 +12,12 @@
       "env": {
         "RUBYOPT": "-W0"
       }
+    },
+    {
+      "command": "bundle install && bundle exec jekyll serve --trace --livereload",
+      "name": "install & serve",
+      "request": "launch",
+      "type": "node-terminal"
     }
   ]
 }
