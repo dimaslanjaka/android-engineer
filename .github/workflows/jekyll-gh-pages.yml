@@ -70,7 +70,7 @@ jobs:
       - run: git checkout --orphan compiler
       - run: git clean -f -d
       - run: git reset --hard origin/compiler
-      - run: git checkout origin/master *.md
+      - run: git checkout --merge origin/master *.md
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
