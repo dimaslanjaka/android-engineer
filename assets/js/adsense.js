@@ -18,7 +18,7 @@ function appendAd(el) {
 const isDev = location.port == "4000";
 const wrapper = document.getElementById("content-wrapper");
 const elements = shuffleArray(
-	Array.from(wrapper.querySelectorAll("pre,h1,h2,h3,h4,h5"))
+	Array.from(wrapper.querySelectorAll("pre,h1,h2,h3,h4,h5,div.embed-container"))
 );
 elements.forEach(appendAd);
 document
