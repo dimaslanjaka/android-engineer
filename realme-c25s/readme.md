@@ -43,6 +43,8 @@ fastboot flash recovery recovery.img
 - select scatter `.txt` file
 - check all partitions, uncheck **preloader**, **opporeserve2**
 
+> when above methods not work on your device, try flash your **previous RUI ROM**. ex: **C.xx** for RUI3 and **A.xx** for RUI2
+
 ## Official Forums
 
 > all about **Realme C25s RMX3195** from official realme forums
