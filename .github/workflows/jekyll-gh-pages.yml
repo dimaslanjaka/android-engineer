@@ -48,13 +48,17 @@ jobs:
           path: .deploy_git
       - name: initialize site
         run: |
+          git config --global user.name 'dimaslanjaka'
+          git config --global user.email 'dimaslanjaka@gmail.com'
           git rm -rf .
-          git restore .gitignore .nojekyll
+          git checkout origin/gh-pages .gitignore .nojekyll
         working-directory: .deploy_git
       - name: Set env
         id: set-env
         shell: bash
         run: |
+          git config --global user.name 'dimaslanjaka'
+          git config --global user.email 'dimaslanjaka@gmail.com'
           echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
           echo "GITHUB_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
           echo "GITHUB_COMMIT_URL=https://github.com/${{github.repository}}/commit/$(echo $GITHUB_SHA)" >> $GITHUB_ENV
@@ -62,7 +66,7 @@ jobs:
       - run: git fetch --all
       - run: git checkout -b compiler origin/compiler
       - run: git branch
-      - run: git merge master -X theirs
+      - run: git merge master -X theirs --allow-unrelated-histories
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
