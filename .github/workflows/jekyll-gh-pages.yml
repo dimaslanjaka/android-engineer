@@ -67,6 +67,7 @@ jobs:
       - run: git checkout -b compiler origin/compiler
       - run: git branch
       - run: git merge master -X theirs --allow-unrelated-histories
+      - run: git checkout master *.md
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
