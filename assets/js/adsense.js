@@ -2,6 +2,7 @@ const adList = [
 	`<ins class=adsbygoogle data-ad-client=ca-pub-2188063137129806 data-ad-format=auto data-ad-slot=3295872825 data-full-width-responsive=true style=display:block></ins>`,
 	"<ins class=adsbygoogle data-ad-client=ca-pub-2188063137129806 data-ad-format=auto data-ad-slot=4695444437 data-full-width-responsive=true style=display:block></ins>",
 	"<ins class=adsbygoogle data-ad-client=ca-pub-2188063137129806 data-ad-format=fluid data-ad-layout=in-article data-ad-slot=5634823028 style=display:block;text-align:center></ins>",
+	"<ins class=adsbygoogle data-ad-client=ca-pub-2188063137129806 data-ad-format=fluid data-ad-layout=in-article data-ad-slot=8481296455 style=display:block;text-align:center></ins>",
 ];
 function appendAd(el) {
 	const ad = adList.shift();
