@@ -6,3 +6,5 @@
 *.img
 *.zip
 *.rar
+.jekyll-cache
+.jekyll-metadata

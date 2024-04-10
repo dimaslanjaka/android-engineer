@@ -31,18 +31,20 @@ logo: https://rawcdn.githack.com/dimaslanjaka/public-source/1a5eb6ac9eec2bd440a6
 permalink: /:title
 encoding: UTF-8
 
-# plugins:
-# - github-pages
-# - jekyll-minifier
+collections:
+  posts:
+    output: true
+  project:
+    output: true
 
 extlinks:
   attributes: { rel: "external nofollow noopener noreferrer", target: _blank }
-  rel_exclude: ["webmanajemen.com", "host2.net"]
+  rel_exclude: ["webmanajemen.com"]
 
 markdown: CommonMarkGhPages
 commonmark:
   options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "strikethrough"]
+  extensions: ["strikethrough", "autolink", "table"]
 
 # enable ES6
 jekyll-minifier:
