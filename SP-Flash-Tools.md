@@ -1,3 +1,7 @@
+---
+title: SP Flash Tool tips
+---
+
 when you're flashing `realme`,`oppo`,`vivo` devices
 
 - change options UART
