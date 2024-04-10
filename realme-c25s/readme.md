@@ -46,10 +46,10 @@ fastboot flash recovery recovery.img
 - check all partitions, uncheck **preloader**, **opporeserve2**
 
 > When above methods not work on your device, try flash your **previous RUI ROM**. ex: **C.xx** for RUI3 and **A.xx** for RUI2
->
+
 > After flashing, the phone will automate boot into recovery. Select 2nd option to reset userdata partition, enter 4 digits codes. click red text selection.
->
-> after **boot up**, dont connect any network (wifi/simcard), then downgrade via OTA. [[see **install local greyed out**]](#install-local-greyed-out)
+
+> After **boot up**, dont connect any network (wifi/simcard), then downgrade via OTA. [[see **install local greyed out**]](#install-local-greyed-out)
 
 ## install local greyed out
 
