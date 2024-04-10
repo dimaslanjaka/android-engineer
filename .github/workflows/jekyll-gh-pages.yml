@@ -44,8 +44,8 @@ jobs:
         #   # Otherwise, uses the default branch.
         #   ref: 'gh-pages'
           ref: ${{ github.event.inputs.ref }}
-      - run: git checkout gh-pages
-      - run: git merge master
+      - run: "git checkout gh-pages"
+      - run: "git merge master"
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.3' # Not needed with a .ruby-version file
