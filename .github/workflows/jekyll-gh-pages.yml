@@ -43,7 +43,7 @@ jobs:
       - run: git fetch --all
       - run: git checkout -b gh-pages origin/gh-pages
       - run: git branch
-      - run: git merge master
+      - run: git merge master -X theirs
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.node-version }}
