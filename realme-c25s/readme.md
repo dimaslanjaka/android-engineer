@@ -23,3 +23,13 @@ fastboot flash recovery recovery.img
 
 - [RMX3195_11.C.14](./twrp/C.14/readme.md)
 - [RMX3195_11.C.16](./twrp/C.16/readme.md)
+
+## How to flash Realme C25s RMX3195
+
+- Download zip file of firmware
+- extract `.ofp` file using [MCT_OFP_Extractor[pass evilicacelldotcom].rar](https://github.com/dimaslanjaka/android-engineer/raw/master/MCT_OFP_Extractor%5Bpass%20evilicacelldotcom%5D.rar) (extract the `rar` first)
+- merge chunk images using `simg2img` [[read here]](../simg2img_win/readme.md)
+- bypass USB mediatek auth [[read here]](../mtk-bypass-auth-troubleshoot.md)
+- now you ready to flash **Realme C25s RMX3195** using [SP Flash Tool](../SP-Flash-Tools.md)
+
+> flashing more than **4GB** firmware might take 1-3 hours, _please be patient_ :)

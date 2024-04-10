@@ -6,7 +6,7 @@ title: MTK bypass auth troubleshooting
 
 when you first installing driver you should use `Auth_Bypass_Tool_V6.0.0.1+libUSB/MTK_Auth_Bypass_Tool_V6.0.0.1/mtksecbypass.exe` instead of `mtk_bypass_rev4.exe`
 
-- connect your phone with holding `power + and -` together
+- connect your phone with holding `power` and `vol +` and `vol -` together
 - then `click reload preloader` wait until phone reset the USB automatically
 - then `click bypass` to install mtk driver automatically when phone connected on download mode.
 - now you can flash the phone using `SP flash tool`
