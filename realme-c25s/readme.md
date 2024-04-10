@@ -47,6 +47,14 @@ fastboot flash recovery recovery.img
 
 > when above methods not work on your device, try flash your **previous RUI ROM**. ex: **C.xx** for RUI3 and **A.xx** for RUI2
 
+## install local greyed out
+
+when you trying install local OTA update/downgrade zip, and the **install local** is disabled/greyed out. You should reset your phone without network (no wifi, no simcard).
+
+However resetting phone sometimes the device forcing you to get network connected, you can click **skip** on top right corner. When the **skip** button not enabled/hidden/not showing, you should re-flash your phone using **SP flash tool** then repeat above step (no network setup).
+
+Now you can using **install local ota** on your **Realme C25s RMX3195**
+
 ## Official Forums
 
 > all about **Realme C25s RMX3195** from official realme forums
