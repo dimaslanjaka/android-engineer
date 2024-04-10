@@ -64,9 +64,12 @@ jobs:
           echo "GITHUB_COMMIT_URL=https://github.com/${{github.repository}}/commit/$(echo $GITHUB_SHA)" >> $GITHUB_ENV
           echo "GITHUB_RUNNER_URL=https://github.com/${{github.repository}}/commit/${{github.sha}}/checks/${{github.run_id}}" >> $GITHUB_ENV
       - run: git fetch --all
-      - run: git checkout -b compiler origin/compiler
-      - run: git branch
+      # - run: git checkout -b compiler origin/compiler
+      # - run: git branch
       # - run: git merge master -X theirs --allow-unrelated-histories
+      - run: git checkout --orphan compiler
+      - run: git clean -f -d
+      - run: git pull -u origin compiler
       - run: git checkout origin/master *.md
       - uses: actions/setup-node@v4
         with:
