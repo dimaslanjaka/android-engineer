@@ -7,7 +7,7 @@ permissions: write-all
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master", "gh-pages"]
+    branches: ["master", "compiler"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,8 +40,26 @@ jobs:
         with:
           token: ${{ env.ACCESS_TOKEN }}
           ref: "master"
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ env.ACCESS_TOKEN }}
+          ref: 'gh-pages'
+          path: .deploy_git
+      - name: initialize site
+        run: |
+          git rm -rf .
+        working-directory: .deploy_git
+      - name: Set env
+        id: set-env
+        shell: bash
+        run: |
+          echo "GITHUB_SHA_SHORT=$(echo $GITHUB_SHA | cut -c 1-6)" >> $GITHUB_ENV
+          echo "GITHUB_BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          echo "GITHUB_COMMIT_URL=https://github.com/${{github.repository}}/commit/$(echo $GITHUB_SHA)" >> $GITHUB_ENV
+          echo "GITHUB_RUNNER_URL=https://github.com/${{github.repository}}/commit/${{github.sha}}/checks/${{github.run_id}}" >> $GITHUB_ENV
       - run: git fetch --all
-      - run: git checkout -b gh-pages origin/gh-pages
+      - run: git checkout -b compiler origin/compiler
       - run: git branch
       - run: git merge master -X theirs
       - uses: actions/setup-node@v4
@@ -56,37 +74,46 @@ jobs:
       - run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
       # - name: Build with Jekyll
       #   uses: actions/jekyll-build-pages@v1
       #   with:
       #     source: ./
       #     destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload folder
-          path: "_site"
-          name: "github-pages"
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #     # Upload folder
+      #     path: "_site"
+      #     name: "github-pages"
+      - name: copy generated site
+        run: cp -rf _site/. .deploy_git/
+      - run: |
+          git config --global user.name 'dimaslanjaka'
+          git config --global user.email 'dimaslanjaka@gmail.com'
+          git add .
+          git commit -m "chore: released from ${{ env.GITHUB_COMMIT_URL }}" -m "commit hash: ${{ env.GITHUB_SHA_SHORT }}" -m "commit url: ${{ env.GITHUB_COMMIT_URL }}" -m "runner: ${{ env.GITHUB_RUNNER_URL }}"
+          git push
+        working-directory: .deploy_git
 
   # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    env:
-      NODE_OPTIONS: "--max_old_space_size=8192" #8192 4096 --expose-gc
-      YARN_ENABLE_IMMUTABLE_INSTALLS: false
-      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN || github.token }}
-      node-version: 18.x
-      YARN_CHECKSUM_BEHAVIOR: update
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          token: ${{ env.ACCESS_TOKEN }}
-          artifact_name: "github-pages"
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   env:
+  #     NODE_OPTIONS: "--max_old_space_size=8192" #8192 4096 --expose-gc
+  #     YARN_ENABLE_IMMUTABLE_INSTALLS: false
+  #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN || github.token }}
+  #     node-version: 18.x
+  #     YARN_CHECKSUM_BEHAVIOR: update
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v4
+  #       with:
+  #         token: ${{ env.ACCESS_TOKEN }}
+  #         artifact_name: "github-pages"
