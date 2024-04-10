@@ -6,31 +6,55 @@
 @import "jekyll-theme-minimal";
 
 * {
-  word-wrap: break-word;
+	word-wrap: break-word;
 }
 
-h1,h2,h3,h4,h5 {
-  word-wrap: break-word !important;
-  * {
-    word-wrap: break-word !important;
-  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+	word-wrap: break-word !important;
+	* {
+		word-wrap: break-word !important;
+	}
 }
 
 /* Define your CSS class */
 .hide-on-mobile-tablet {
-  display: block; /* Or any other display property you want */
+	display: block; /* Or any other display property you want */
 }
 
 /* Media query for devices with maximum width of 768px (tablets) */
 @media only screen and (max-width: 768px) {
-  .hide-on-mobile-tablet {
-    display: none; /* Hide on tablets */
-  }
+	.hide-on-mobile-tablet {
+		display: none; /* Hide on tablets */
+	}
 }
 
 /* Media query for devices with maximum width of 576px (mobile devices) */
 @media only screen and (max-width: 576px) {
-  .hide-on-mobile-tablet {
-    display: none; /* Hide on mobile devices */
-  }
+	.hide-on-mobile-tablet {
+		display: none; /* Hide on mobile devices */
+	}
+}
+
+// blockquote
+blockquote {
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+	display: inline;
 }
