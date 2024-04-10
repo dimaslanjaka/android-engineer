@@ -5,8 +5,8 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "bundle exec jekyll serve",
-      "name": "serve",
+      "command": "bundle exec jekyll build",
+      "name": "build",
       "request": "launch",
       "type": "node-terminal",
       "env": {
