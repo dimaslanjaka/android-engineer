@@ -1,3 +1,9 @@
+---
+title: Realme C25s RMX3195
+---
+
+# Realme C25s RMX3195
+
 ## Stock recovery
 
 [select your firmware version and download then extract](https://drive.google.com/drive/folders/190xREcWNzmEY1ZShuaaNRcWE1tpPPJ40)
@@ -12,3 +18,8 @@ fastboot flash recovery recovery.img
 ## Stock ROM
 
 - [A11 / 11 A.19 Android 11 RUI2](http://rms01.realme.net/SW/realme%20service/realme%20C25s/2167A/RMX3195export_11_A.19_2022030814430000.zip)
+
+## TWRP
+
+- [RMX3195_11.C.14](./twrp/C.14/readme.md)
+- [RMX3195_11.C.16](./twrp/C.16/readme.md)
