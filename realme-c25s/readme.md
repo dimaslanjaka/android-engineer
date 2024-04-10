@@ -49,3 +49,4 @@ fastboot flash recovery recovery.img
 
 - [RUI 3](https://c.realme.com/in/post-details/1525087214281764864)
   > including **upgrade**, **downgrade** OTA zip links
+- [RUI 2 Ota downgrade zip](https://download.c.realme.com/flash/Rollbackpack/realme_C25s/oplus_ota_downgrade.zip)
