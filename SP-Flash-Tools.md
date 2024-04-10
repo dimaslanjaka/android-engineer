@@ -8,6 +8,11 @@ when you're flashing `realme`, `oppo`, `vivo` devices, dont forget doing these t
 
 [read here](./mtk-bypass-auth-troubleshoot.md#rx-timeout)
 
+## Partition checks
+
+- **DONT** check `preloader`, `opporeserve2`, `cdt_engineering`
+  > but, when flashing error try check the **preloader** partition
+
 ## Optional
 
 - change options **UART**

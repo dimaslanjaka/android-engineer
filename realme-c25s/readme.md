@@ -36,3 +36,9 @@ fastboot flash recovery recovery.img
 - now you ready to flash **Realme C25s RMX3195** using [SP Flash Tool](../SP-Flash-Tools.md)
 
 > flashing more than **4GB** firmware might take 1-3 hours, _please be patient_ :)
+
+## DEADBOOT after downgrading
+
+- open your **SP Flash Tool**
+- select scatter `.txt` file
+- check all partitions, uncheck **preloader**, **opporeserve2**
