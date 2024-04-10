@@ -49,7 +49,7 @@ jobs:
       - name: initialize site
         run: |
           git rm -rf .
-          git restore .gitignore .nojekyll
+          git checkout origin/gh-pages .gitignore .nojekyll
         working-directory: .deploy_git
       - name: Set env
         id: set-env
