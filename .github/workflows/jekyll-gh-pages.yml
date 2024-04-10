@@ -46,6 +46,9 @@ jobs:
           ref: ${{ github.event.inputs.ref }}
       - run: "git checkout gh-pages"
       - run: "git merge master"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.node-version }}
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.3' # Not needed with a .ruby-version file
