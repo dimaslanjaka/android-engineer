@@ -69,7 +69,7 @@ jobs:
       # - run: git merge master -X theirs --allow-unrelated-histories
       - run: git checkout --orphan compiler
       - run: git clean -f -d
-      - run: git pull -u origin compiler
+      - run: git reset --hard origin/compiler
       - run: git checkout origin/master *.md
       - uses: actions/setup-node@v4
         with:
