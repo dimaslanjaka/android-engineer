@@ -28,11 +28,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # The branch, tag or SHA to checkout. When checking out the repository that
-          # triggered a workflow, this defaults to the reference or SHA for that event.
-          # Otherwise, uses the default branch.
-          ref: 'gh-pages'
+        # with:
+        #   # The branch, tag or SHA to checkout. When checking out the repository that
+        #   # triggered a workflow, this defaults to the reference or SHA for that event.
+        #   # Otherwise, uses the default branch.
+        #   ref: 'gh-pages'
+      - run: git checkout gh-pages
+      - run: git merge master
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
