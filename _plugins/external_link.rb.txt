@@ -1,5 +1,11 @@
 require 'nokogiri'
 
+# _config.yml
+#external_links:
+#  rel: external nofollow noopener noreferrer
+#  target: _blank
+#  title: Opens a new window
+
 module Jekyll
   class ExternalLinkAccessibility
     def self.modify_links(page)

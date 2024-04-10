@@ -29,14 +29,12 @@ permalink: /:title
 encoding: UTF-8
 
 # plugins:
-  # - github-pages
-  # - jekyll-minifier
+# - github-pages
+# - jekyll-minifier
 
-external_links:
-  rel: external nofollow noopener noreferrer
-  target: _blank
-  title: Opens a new window
-
+extlinks:
+  attributes: { rel: "external nofollow noopener noreferrer", target: _blank }
+  rel_exclude: ["webmanajemen.com", "host2.net"]
 # collections:
 #   - contributors
 
