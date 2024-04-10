@@ -39,3 +39,8 @@ extlinks:
 #   - contributors
 
 # paginate: 10
+
+# enable ES6
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
