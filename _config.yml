@@ -2,6 +2,7 @@ title: "Android Engineer"
 # baseurl: "/android-engineer" # the subpath of your site, e.g. /blog
 # url: "https://www.webmanajemen.com" # the base hostname & protocol for your site
 github_username: dimaslanjaka
+repository: dimaslanjaka/android-engineer
 email: dimaslanjaka@gmail.com
 exclude:
   - .sass-cache/
@@ -28,9 +29,15 @@ permalink: /:title
 encoding: UTF-8
 
 # plugins:
-#   - github-pages
+  # - github-pages
+  # - jekyll-minifier
 
 external_links:
   rel: external nofollow noopener noreferrer
   target: _blank
   title: Opens a new window
+
+# collections:
+#   - contributors
+
+# paginate: 10
