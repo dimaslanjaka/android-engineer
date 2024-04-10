@@ -15,3 +15,5 @@ fastboot flash vbmeta vbmeta.img
 fastboot flash vbmeta_system vbmeta_system.img
 fastboot flash vbmeta_vendor vbmeta_vendor.img
 ```
+
+[download files here](https://github.com/dimaslanjaka/android-engineer/tree/master/realme-c25s/twrp/C.14)
