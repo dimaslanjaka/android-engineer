@@ -53,7 +53,7 @@ group :jekyll_plugins do
   gem "jekyll-commonmark-ghpages"
   gem "jekyll-feed"
   gem "jekyll-gist"
-  gem "jekyll-github-metadata"
+  # gem "jekyll-github-metadata"
   gem "jekyll-paginate"
   gem "jekyll-redirect-from"
   gem "jekyll-seo-tag"
@@ -69,6 +69,12 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-octicons"
   gem "jekyll-remote-theme"
+end
+
+if ENV['GITHUB_ACTIONS']
+  platforms :ruby do
+    gem "jekyll-github-metadata", :group => :jekyll_plugins
+  end
 end
 
 # bundler
