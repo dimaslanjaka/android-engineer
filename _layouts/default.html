@@ -62,9 +62,10 @@
       {% assign shuffled_content = all_content | sample: all_content.size | where_exp: "item", "item.title" %}
       <ul>
         {% for item in shuffled_content limit:5 %}
-        {% if item.url %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-        {% endif %}
+          {% if item.url %}
+            {% assign url = item.url | prepend: site.baseurl %}
+            <li><a href="{{ url }}">{{ item.title }}</a></li>
+          {% endif %}
         {% endfor %}
       </ul>
 
