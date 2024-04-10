@@ -15,3 +15,22 @@ h1,h2,h3,h4,h5 {
     word-wrap: break-word !important;
   }
 }
+
+/* Define your CSS class */
+.hide-on-mobile-tablet {
+  display: block; /* Or any other display property you want */
+}
+
+/* Media query for devices with maximum width of 768px (tablets) */
+@media only screen and (max-width: 768px) {
+  .hide-on-mobile-tablet {
+    display: none; /* Hide on tablets */
+  }
+}
+
+/* Media query for devices with maximum width of 576px (mobile devices) */
+@media only screen and (max-width: 576px) {
+  .hide-on-mobile-tablet {
+    display: none; /* Hide on mobile devices */
+  }
+}

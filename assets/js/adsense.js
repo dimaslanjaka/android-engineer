@@ -21,17 +21,26 @@ const elements = shuffleArray(
 	Array.from(wrapper.querySelectorAll("pre,h1,h2,h3,h4,h5"))
 );
 elements.forEach(appendAd);
-document.querySelectorAll("ins.adsbygoogle").forEach((el, i) => {
-	if (el.children.length == 0) {
+document
+	.querySelectorAll(`ins.adsbygoogle:not([class*=" "])`)
+	.forEach((el, i) => {
 		const uid = `#${el.id}.${el.className}[${i}]`;
-		console.log("apply", uid);
-		if (isDev) {
-			el.style.border = "1px solid red";
-			el.setAttribute("data-adtest", "on");
+		const isHidden =
+			window.getComputedStyle(el).display === "none" ||
+			window.getComputedStyle(el.parentElement).display === "none";
+		if (isHidden) {
+			// remove hidden ins
+			el.remove();
+			console.info("remove", uid);
+		} else if (el.children.length == 0) {
+			console.info("apply", uid);
+			if (isDev) {
+				el.style.border = "1px solid red";
+				el.setAttribute("data-adtest", "on");
+			}
+			(adsbygoogle = window.adsbygoogle || []).push({});
 		}
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	}
-});
+	});
 
 /**
  * Shuffles the elements of an array.
