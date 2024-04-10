@@ -36,10 +36,13 @@ encoding: UTF-8
 extlinks:
   attributes: { rel: "external nofollow noopener noreferrer", target: _blank }
   rel_exclude: ["webmanajemen.com", "host2.net"]
-# collections:
-#   - contributors
 
-# paginate: 10
+markdown: CommonMarkGhPages
+kramdown:
+  parse_block_html: true
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "tables"]
 
 # enable ES6
 jekyll-minifier:
