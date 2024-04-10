@@ -14,6 +14,8 @@ Check if it matches with mine.
 3. Disable dm verity.
 4. Flash patched boot image.
 
+[download files here](https://github.com/dimaslanjaka/android-engineer/tree/master/realme-c25s/twrp/C.16)
+
 device information
 
 ```log
