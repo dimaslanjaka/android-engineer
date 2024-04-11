@@ -24,6 +24,11 @@ exclude:
   - "*.dll"
   - "*.so"
   - ".vscode/"
+  - /script/bootstrap
+  - /script/cibuild
+  - /script/*.js
+  - "**/yarn.lock"
+  - "**/package-lock.json"
 timezone: Asia/Jakarta
 google_analytics: UA-106238155-1
 show_downloads: false

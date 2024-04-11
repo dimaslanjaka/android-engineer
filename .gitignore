@@ -8,3 +8,11 @@
 *.rar
 .jekyll-cache
 .jekyll-metadata
+**/node_modules/
+**/node_modules/
+**/.yarn/cache
+**/.yarn/versions
+**/.yarn/unplug*
+**/.yarn/*.gz
+yarn.lock
+tmp/
