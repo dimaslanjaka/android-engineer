@@ -126,6 +126,17 @@ blockquote p {
 	}
 }
 
+// github
+
+:not(pre) > code {
+	padding: 0.2em 0.4em;
+	margin: 0;
+	font-size: 85%;
+	white-space: break-spaces;
+	background-color: #737b8666;
+	border-radius: 6px;
+	color: #000000;
+}
 
 // bootstrap
 
