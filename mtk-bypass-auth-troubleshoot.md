@@ -1,6 +1,10 @@
 ---
 title: MTK bypass auth troubleshooting
-date: 2024-04-11T06:15:08.417Z
+date: 2024-04-09T06:18:53.240Z
+tags: []
+categories:
+  - mtk
+updated: 2024-04-11T13:20:37+07:00
 ---
 
 ## install MT65xx_Preloader and QcommMtk_driver_setup
@@ -31,3 +35,8 @@ when you're facing cannot download firmware after disabled auth
 - **re-insert** the cable
 - open **Auth_Bypass_Tool_V6.0.0.1+libusb-win32-devel-filter-1.2.6.0.rar/MTK_Auth_Bypass_Tool_V6.0.0.1/mtksecbypass.exe**
 - click **read preloader**
+- wait until the button **re-enabled**
+  > DONT PUT OFF USB CABLE
+- click **disable auth**
+- wait until finished
+- Now you can flash using **SP Flash Tool or Other MTK tools**
