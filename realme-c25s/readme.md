@@ -1,6 +1,12 @@
 ---
 title: Realme C25s RMX3195
-updated: 2024-04-11T18:07:22+07:00
+updated: 2024-04-11T18:09:51+07:00
+date: 2024-04-09T11:08:54.542Z
+categories:
+  - realme
+  - mtk
+tags:
+  - rmx3195
 ---
 
 # Realme C25s RMX3195
