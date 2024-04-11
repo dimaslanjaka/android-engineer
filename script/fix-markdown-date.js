@@ -43,13 +43,13 @@ async function main() {
 
 				console.log(`File: ${file}, Creation Date: ${creationDate}`);
 				const ignore = [path.join(cwd, "readme.md")];
-        if (ignore.includes(file)) return;
+				if (ignore.includes(file)) return;
 				const parse = await hpp.parsePost(file, { config });
-				parse.metadata.date = creationDate;
+				parse.metadata.date = creationDate.replace(/'/gm, "").trim();
 				delete parse.metadata.description;
 				delete parse.metadata.subtitle;
 				delete parse.metadata.excerpt;
-        delete parse.metadata.type;
+				delete parse.metadata.type;
 				const md = hpp.buildPost(parse);
 				fs.writeFileSync(file, md);
 				// const read = fs.readFileSync(path.join(process.cwd(), file), {
