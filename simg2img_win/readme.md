@@ -2,9 +2,9 @@
 title: simg2img for windows
 ---
 
-simg2img for windows users
+simg2img for windows users. [download link in bottom of this article](#download-link)
 
-This is a simple tool for android romer to convert simg to ext4.img.
+This is a simple tool for android romer to convert _chunk images_ to **super.img**.
 
 Put your system.img file into the directory and run convert.bat, wait it finish and you would get system.ext4.img which could be read by ext2explore.
 
@@ -63,3 +63,7 @@ to enable full download of `super.img` for **Realme**, you should edit `MTXXXXX_
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/i6rvuBauM4c' frameborder='0' allowfullscreen></iframe></div>
 
 **NOW YOU READY TO FLASH USING SP FLASH TOOL**
+
+### Download link
+
+[[download files here]](https://github.com/dimaslanjaka/android-engineer/tree/master/simg2img_win).
