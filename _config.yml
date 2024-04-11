@@ -23,6 +23,7 @@ exclude:
   - "*.img"
   - "*.dll"
   - "*.so"
+  - ".vscode/"
 timezone: Asia/Jakarta
 google_analytics: UA-106238155-1
 show_downloads: false
