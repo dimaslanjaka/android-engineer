@@ -4,7 +4,7 @@ title: MTK bypass auth troubleshooting
 
 # install `MT65xx_Preloader` and `QcommMtk_driver_setup`
 
-when you first installing driver you should use `Auth_Bypass_Tool_V6.0.0.1+libUSB/MTK_Auth_Bypass_Tool_V6.0.0.1/mtksecbypass.exe` instead of `mtk_bypass_rev4.exe`
+when you first installing driver you should use **Auth_Bypass_Tool_V6.0.0.1+libusb-win32-devel-filter-1.2.6.0.rar/MTK_Auth_Bypass_Tool_V6.0.0.1/mtksecbypass.exe** instead of `mtk_bypass_rev4.exe`
 
 > [download files from github](https://github.com/dimaslanjaka/android-engineer/tree/master)
 
