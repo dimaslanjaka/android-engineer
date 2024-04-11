@@ -73,3 +73,4 @@ gem 'rack', '~> 2.2.4'
 gem 'rspec'
 gem "webrick", "~> 1.8"
 
+gem 'solargraph', group: :development
