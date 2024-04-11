@@ -1,6 +1,6 @@
 ---
 title: Realme C25s RMX3195
-updated: 2024-04-11T14:07:15+07:00
+updated: 2024-04-11T14:08:21+07:00
 ---
 
 # Realme C25s RMX3195
@@ -22,7 +22,9 @@ fastboot flash recovery recovery.img
 
 > stock ROM for **Realme C25s RMX3195** by version
 
-- [A11 / 11 A.19 Android 11 RUI2](http://rms01.realme.net/SW/realme%20service/realme%20C25s/2167A/RMX3195export_11_A.19_2022030814430000.zip)
+### Android 11 RUI2
+
+- [RMX3195export_11_A.19_2022030814430000.zip](http://rms01.realme.net/SW/realme%20service/realme%20C25s/2167A/RMX3195export_11_A.19_2022030814430000.zip)
   > this version firmware has ability to install **TWRP** permanently
 - [RMX3195_11_A.20_BD.zip](https://drive.google.com/file/d/1qieg9iDWBwjvflQivP9OlW0rtcimYzHT/view)
   > work to downgrade [[video tutorial]](https://www.youtube.com/watch?v=UF883EW1v6o)
