@@ -14,6 +14,13 @@
 }
 
 @font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Ubuntu"), url("../fonts/Ubuntu.ttf") format("truetype");
+}
+
+@font-face {
 	font-family: "Noto Sans";
 	font-weight: 700;
 	font-style: normal;
