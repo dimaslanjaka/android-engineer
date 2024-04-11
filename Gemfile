@@ -46,7 +46,7 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-paginate"
   gem "jekyll-redirect-from"
-  gem "jekyll-seo-tag"
+  gem "jekyll-seo-tag", git: "https://github.com/dimaslanjaka/jekyll-seo-tag.git"
   gem "jekyll-sitemap"
   gem "jekyll-avatar"
   gem "jemoji"
