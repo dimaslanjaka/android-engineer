@@ -39,4 +39,4 @@ when you're facing cannot download firmware after disabled auth
   > DONT PUT OFF USB CABLE
 - click **disable auth**
 - wait until finished
-- Now you can flash using **SP Flash Tool or Other MTK tools**
+- Now you can flash using **SP Flash Tool or Other MTK tools** [[read here]](./SP-Flash-Tools.md)
