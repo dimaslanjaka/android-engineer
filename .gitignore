@@ -1,4 +1,10 @@
 /minimal
 /_site
 .sass-cache
+*.log
 .env
+*.img
+*.zip
+*.rar
+.jekyll-cache
+.jekyll-metadata
