@@ -10,6 +10,7 @@ wordcount: 190
 ---
 
 
+
 Open phone app dial *#899#
 Tap on software version
 Check if it matches with mine.

@@ -10,6 +10,7 @@ wordcount: 1319
 ---
 
 
+
 when you're flashing `realme`, `oppo`, `vivo` devices, dont forget doing these things:
 
 ## bypass auth for mediatek
