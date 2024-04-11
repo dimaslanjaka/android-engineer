@@ -1,5 +1,12 @@
 ---
+categories: []
+comments: true
+date: 2024-04-10T10:48:55+0700
+id: 085d5ca2-e8f4-4888-8c32-e8b374f0a4e2
+tags: []
 title: TWRP realme C25s RMX3195_11.C.16
+updated: 2024-04-12T00:48:35+07:00
+wordcount: 190
 ---
 
 Open phone app dial *#899#
