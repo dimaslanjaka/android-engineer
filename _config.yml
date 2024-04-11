@@ -4,6 +4,7 @@ url: "https://www.webmanajemen.com" # the base hostname & protocol for your site
 github_username: dimaslanjaka
 repository: dimaslanjaka/android-engineer
 email: dimaslanjaka@gmail.com
+author: Dimas Lanjaka
 exclude:
   - .sass-cache/
   - .jekyll-cache/
