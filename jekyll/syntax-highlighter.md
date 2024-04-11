@@ -1,6 +1,8 @@
 ---
 title: Syntax highlighter
 layout: default
+date: 2024-04-10T12:23:42.914Z
+updated: 2024-04-11T19:23:53+07:00
 ---
 
 ```javascript
