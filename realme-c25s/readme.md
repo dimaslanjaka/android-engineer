@@ -1,6 +1,6 @@
 ---
 title: Realme C25s RMX3195
-updated: 2024-04-11T14:08:21+07:00
+updated: 2024-04-11T18:07:22+07:00
 ---
 
 # Realme C25s RMX3195
@@ -30,6 +30,22 @@ fastboot flash recovery recovery.img
   > work to downgrade [[video tutorial]](https://www.youtube.com/watch?v=UF883EW1v6o)
 
 ## TWRP
+
+to unlock bootloader
+
+```bash
+fastboot flashing unlock
+```
+to flash twrp
+
+```bash
+fastboot flash recovery recovery.img
+fastboot --disable-verity --disable-verification flash vbmeta vbmeta.img
+fastboot erase userdata
+# fastboot reboot recovery
+# OR
+# fastboot boot recovery.img
+```
 
 - [RMX3195_11.C.14](./twrp/C.14/readme.md)
 - [RMX3195_11.C.16](./twrp/C.16/readme.md)
