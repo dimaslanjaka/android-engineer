@@ -1,6 +1,14 @@
 ---
+categories: []
+comments: true
+date: 2024-04-09T08:30:41+0700
+id: 836103b3-7ec7-4888-8411-60f38b5ca9da
+tags: []
 title: SP Flash Tool tips
+updated: 2024-04-11T19:26:16+07:00
+wordcount: 1319
 ---
+
 
 when you're flashing `realme`, `oppo`, `vivo` devices, dont forget doing these things:
 

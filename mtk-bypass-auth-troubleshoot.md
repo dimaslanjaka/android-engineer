@@ -1,11 +1,15 @@
 ---
-title: MTK bypass auth troubleshooting
-date: 2024-04-09T06:18:53.240Z
-tags: []
 categories:
   - mtk
+comments: true
+date: 2024-04-09T08:46:42+0700
+id: 8fbf554e-4dc3-4888-83ce-b7e1e83e7604
+tags: []
+title: MTK bypass auth troubleshooting
 updated: 2024-04-11T13:20:37+07:00
+wordcount: 667
 ---
+
 
 ## install MT65xx_Preloader and QcommMtk_driver_setup
 

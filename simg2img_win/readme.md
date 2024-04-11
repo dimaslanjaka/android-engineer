@@ -1,6 +1,14 @@
 ---
+categories: []
+comments: true
+date: 2024-04-09T08:33:24+0700
+id: f2fb8eb6-30f2-4888-859f-9e2584d4776d
+tags: []
 title: simg2img for windows
+updated: 2024-04-11T19:26:17+07:00
+wordcount: 687
 ---
+
 
 simg2img for windows users. [download link in bottom of this article](#download-link)
 
