@@ -1,6 +1,6 @@
 ---
 title: Realme C25s RMX3195
-updated: 2024-04-11T18:09:51+07:00
+updated: 2024-04-12T00:44:17+07:00
 date: 2024-04-09T11:08:54.542Z
 categories:
   - realme
@@ -82,7 +82,7 @@ fastboot erase userdata
 
 when you trying install local OTA update/downgrade zip, and the **install local** is disabled/greyed out. You should reset your phone without network (no wifi, no simcard).
 
-However resetting phone sometimes the device forcing you to get network connected, you can click **skip** on top right corner. When the **skip** button not enabled/hidden/not showing, you should re-flash your phone using **SP flash tool** then repeat above step (no network setup).
+However resetting phone sometimes the device forcing you to get network connected, you can click **skip** on top right corner (repeat when the system show you alert, I've repeated click skip button 3-8x to continue phone setup). When the **skip** button not enabled/hidden/not showing, you should re-flash your phone using **SP flash tool** then repeat above step (no network setup).
 
 Now you can using **install local ota** on your **Realme C25s RMX3195**
 
