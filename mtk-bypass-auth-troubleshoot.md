@@ -1,8 +1,9 @@
 ---
 title: MTK bypass auth troubleshooting
+date: 2024-04-11T06:15:08.417Z
 ---
 
-# install MT65xx_Preloader and QcommMtk_driver_setup
+## install MT65xx_Preloader and QcommMtk_driver_setup
 
 when you first installing driver you should use **Auth_Bypass_Tool_V6.0.0.1+libusb-win32-devel-filter-1.2.6.0.rar/MTK_Auth_Bypass_Tool_V6.0.0.1/mtksecbypass.exe** instead of **mtk_bypass_rev4.exe**
 
@@ -21,3 +22,12 @@ when you first installing driver you should use **Auth_Bypass_Tool_V6.0.0.1+libu
 ## Rx Timeout
 
 when you facing **RX timeout** while disabling auth USB, you should **take off** battery cable then re-insert it to reset USB configuration on the phone.
+
+## Cannot Download Firmware After Disable Auth
+
+when you're facing cannot download firmware after disabled auth
+
+- **take off** battery cable
+- **re-insert** the cable
+- open **Auth_Bypass_Tool_V6.0.0.1+libusb-win32-devel-filter-1.2.6.0.rar/MTK_Auth_Bypass_Tool_V6.0.0.1/mtksecbypass.exe**
+- click **read preloader**
