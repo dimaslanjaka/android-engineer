@@ -19,6 +19,7 @@
     <header>
       <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
+      {% if page.date %}
       <p>
         <i class="fa-light fa-calendar-lines-pen mr-2" title="date published"></i>
         <abbr title="date published">{{ page.date | date: "%d:%m:%Y %H:%M:%S" }}</abbr>
@@ -26,6 +27,7 @@
         <i class="fa-light fa-calendar-clock mr-2" title="date modified"></i>
         <abbr title="date modified">{{ page.updated | default: page.date | date: "%d:%m:%Y %H:%M:%S" }}</abbr>
       </p>
+      {% endif %}
 
       <!-- {% if site.logo %}
       <img src="{{site.logo | relative_url}}" alt="Logo" />
