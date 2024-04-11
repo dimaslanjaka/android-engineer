@@ -1,6 +1,6 @@
 ---
 date: 2024-04-11T18:01:58.521Z
-updated: 2024-04-12T01:12:55+07:00
+updated: 2024-04-12T01:16:46+07:00
 title: Root Realme C25s RMX3195_11_C.08
 description: How to root realme C25s RUI v3 Android 12 RMX3195_11_C.08 tested 12 april 2024
 ---
@@ -13,6 +13,10 @@ How to root realme C25s RUI v3 Android 12 RMX3195_11_C.08 tested 12 april 2024.
 ![](./Screenshots/Screenshot_2022-01-01-12-18-53-66_fc704e6b13c4fb26bf5e411f75da84f2.jpg)
 
 ## Requirements
+
+> [Full previews](https://www.webmanajemen.com/android-engineer/realme-c25s/root/C.08/)
+
+> [Download requirement files here](https://github.com/dimaslanjaka/android-engineer/tree/master/realme-c25s/root/C.08)
 
 - Unlocked Bootloader
 - Make sure your phone version is started with **RMX3195_11_C.08**
