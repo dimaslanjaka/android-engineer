@@ -63,7 +63,7 @@
       {% assign sorted_content = all_content | sort: 'date' | reverse %}
       {% assign shuffled_content = all_content | sample: all_content.size | where_exp: "item", "item.title" %}
       <ul>
-        {% for item in shuffled_content limit:5 %}
+        {% for item in shuffled_content limit:10 %}
         {% if item.url %}
         {% assign url = item.url | prepend: site.baseurl %}
         <li><a href="{{ url }}">{{ item.title }}</a></li>
