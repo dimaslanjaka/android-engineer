@@ -1,14 +1,14 @@
 ---
 categories:
   - realme
-  - mtk
+  - mediatek
 comments: true
 date: 2024-04-09T14:17:44+0700
 id: 66095bd1-d3f4-4888-82b8-129ccd8993a3
 tags:
   - rmx3195
 title: Realme C25s RMX3195
-updated: 2024-04-12T00:45:44+07:00
+updated: 2024-04-13T14:49:52+07:00
 wordcount: 1202
 ---
 
