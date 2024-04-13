@@ -1,12 +1,12 @@
 ---
 categories:
-  - mtk
+  - mediatek
 comments: true
 date: 2024-04-09T08:46:42+0700
 id: 8fbf554e-4dc3-4888-83ce-b7e1e83e7604
 tags: []
 title: MTK bypass auth troubleshooting
-updated: 2024-04-12T00:48:35+07:00
+updated: 2024-04-13T14:50:06+07:00
 wordcount: 667
 ---
 
