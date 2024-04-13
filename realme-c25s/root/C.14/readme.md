@@ -4,8 +4,8 @@ comments: true
 date: 2024-04-10T10:42:33+0700
 id: 4241561f-c865-4888-8461-43e4298a0b4b
 tags: []
-title: TWRP realme C25s RMX3195_11.C.14
-updated: 2024-04-12T00:48:35+07:00
+title: Root realme C25s RMX3195_11.C.14
+updated: 2024-04-13T14:46:54+07:00
 wordcount: 158
 ---
 
