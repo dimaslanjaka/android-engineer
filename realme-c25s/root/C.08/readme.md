@@ -1,8 +1,14 @@
 ---
 date: 2024-04-11T18:01:58.521Z
-updated: 2024-04-13T14:45:04+07:00
+updated: 2024-04-13T14:48:34+07:00
 title: Root Realme C25s RMX3195_11_C.08
 description: How to root realme C25s RUI v3 Android 12 RMX3195_11_C.08 tested 12 april 2024
+tags:
+  - RMX3195
+  - root
+categories:
+  - mediatek
+  - realme
 ---
 
 How to root realme C25s RUI v3 Android 12 RMX3195_11_C.08 tested 12 april 2024.
