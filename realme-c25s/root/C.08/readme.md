@@ -1,6 +1,6 @@
 ---
 date: 2024-04-11T18:01:58.521Z
-updated: 2024-04-13T14:41:47+07:00
+updated: 2024-04-13T14:45:04+07:00
 title: Root Realme C25s RMX3195_11_C.08
 description: How to root realme C25s RUI v3 Android 12 RMX3195_11_C.08 tested 12 april 2024
 ---
@@ -84,3 +84,14 @@ adb install MagiskManager-v6.0.1.apk
 ```bash
 adb install root-checker-6-5-3.apk
 ```
+
+## Troubleshoot
+
+### Magisk always need install update
+
+when magisk always need install update when start the magisk app
+
+- click **cancel**
+- tap **install** on magisk
+- select **direct install (recommended)**
+- wait and reboot the phone
