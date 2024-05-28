@@ -2,6 +2,12 @@
 title: Fix IMEI missing on Realme 5 RMX1911
 description: How to fix IMEI missing and baseband missing RMX1911 realme 5
 thumbnail: https://i.ytimg.com/vi/ZJGBDEnVjXI/sddefault.jpg
+tags:
+  - RMX1911
+  - imei
+categories:
+  - snapdragon
+  - realme
 ---
 
 ## How to fix IMEI missing and baseband missing on Realme 5 RMX1911
