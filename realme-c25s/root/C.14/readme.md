@@ -3,7 +3,7 @@ comments: true
 date: 2024-04-10T10:42:33+0700
 id: 4241561f-c865-4888-8461-43e4298a0b4b
 title: Root realme C25s RMX3195_11.C.14
-updated: 2024-04-13T14:48:48+07:00
+updated: 2024-04-13T16:48:59+07:00
 tags:
   - RMX3195
   - root
