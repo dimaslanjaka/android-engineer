@@ -13,3 +13,4 @@
 **/.yarn/*.gz
 yarn.lock
 tmp/
+package-lock.json
