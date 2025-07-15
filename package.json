@@ -9,9 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "yarn@4.1.1",
   "devDependencies": {
     "@types/node": "^24.0.13",
+    "binary-collections": "^2.0.7",
     "glob": "^11.0.3"
   },
   "dependencies": {
@@ -19,5 +19,10 @@
     "hexo-post-parser": "^3.0.1",
     "moment": "^2.30.1",
     "yaml": "^2.8.0"
-  }
+  },
+  "resolutions": {
+    "binary-collections": "https://github.com/dimaslanjaka/bin/raw/53b089eeece3a15550d13fc6de88c9ebbd6fef9d/releases/bin.tgz",
+    "sbg-utility": "https://github.com/dimaslanjaka/static-blog-generator/raw/7696e66ab84f319909c5dab9054303e91f898454/packages/sbg-utility/release/sbg-utility.tgz"
+  },
+  "packageManager": "yarn@4.9.2"
 }
